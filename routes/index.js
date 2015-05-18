@@ -22,7 +22,7 @@ var fs = require('fs');
 var fsPlus = require('../lib/fs-plus');
 var path = require('path');
 var imgSize = require('image-size');
-var conf = require('../lib/config').config;
+var conf = require('../lib/config');
 var log = require('../lib/logger');
 var reImgType = /(\.jpg|\.jpeg|\.gif|\.png)$/i;
 
