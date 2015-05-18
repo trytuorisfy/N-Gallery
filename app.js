@@ -13,7 +13,7 @@ var i18n = require('i18n');
 var config = require('./lib/config');
 var log = require('./lib/logger');
 var app = express();
-var conf = config.config;
+var conf = config;
 
 i18n.configure({
   locales:['zh', 'en'],
