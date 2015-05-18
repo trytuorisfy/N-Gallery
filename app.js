@@ -60,7 +60,7 @@ app.get('^/operationHandler', routes.operationHandler);
 app.get('^/users', user.list);
 
 exports.run = function (port) {
-  config.validate(null);
+  //config.validate(null);
   
   http.createServer(app).listen(port, function () {
     console.log('Express server listening on port ' + port);
