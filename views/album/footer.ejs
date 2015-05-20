@@ -21,6 +21,8 @@
 <script src="/javascripts/jquery.hotkeys.js"></script>
 <script src="/bs3/js/bootstrap.min.js"></script>
 <script src="/javascripts/song.js"></script>
+<script src="/javascripts/imagesLoaded.js"></script>
+<script src="/javascripts/masonry.pkgd.min.js"></script>
 <script>
 $(function () {
 
@@ -200,6 +202,15 @@ $(function () {
         e.preventDefault();
         $(this).toggleClass('open');
     });
+
+    //瀑布流
+    var $container = $('.masonry-container');
+    $container.imagesLoaded( function () {
+        $container.masonry({
+            columnWidth: '.img-item',
+            itemSelector: '.img-item'
+        });
+    });     
 
 });
 </script>

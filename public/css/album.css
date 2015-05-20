@@ -56,6 +56,7 @@ span.delete-modal-warn {
 #album-container {
   width: 950px;
   margin: 0 auto;
+  overflow: hidden;
 }
 #album-container h1 {
   margin-top: 90px;
@@ -80,20 +81,22 @@ span.delete-modal-warn {
   -o-transition: border 0.1s;
   transition: border 0.1s;
 }
-.img-item:hover {
-  border-left: 10px solid #abc;
-  border-right: 10px solid #cba;
+.img-item:hover img{
+  /*border-left: 10px solid #abc;*/
+  /*border-right: 10px solid #cba;*/
+  border-color: orange;
 }
 .img-item a:hover {
   text-decoration: none;
   color: #7da1bc;
 }
 .img-item img {
-  max-width: 930px;
-  display: block;
-  margin: auto;
+  /*max-width: 930px;*/
+  width: 100%;
+  /*display: block;*/
+  /*margin: auto;*/
   border: 1px solid #e0e0e0;
-  padding: 20px;
+  padding: 10px;
   background: rgba(255,255,255,0.5);
   -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
   -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);

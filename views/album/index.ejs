@@ -1,8 +1,9 @@
 <% include header.ejs %>
-<% for (var i = 0; i < items.length; i++) { %>
-<% var item = items[i]; %>
-<% include item.ejs %>
-<% } %>
+<div class='masonry-container'>
+	<% for (var i = 0; i < items.length; i++) { %>
+	<% var item = items[i]; %>
+	<% include item.ejs %>
+	<% } %>
 </div>
 <!-- end of #album-container -->
 

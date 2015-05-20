@@ -13,7 +13,9 @@ var i18n = require('i18n');
 var config = require('./lib/config');
 var log = require('./lib/logger');
 var app = express();
+// var conf = config.config;
 var conf = config;
+
 
 i18n.configure({
   locales:['zh', 'en'],
@@ -60,7 +62,7 @@ app.get('^/operationHandler', routes.operationHandler);
 app.get('^/users', user.list);
 
 exports.run = function (port) {
-  //config.validate(null);
+  // config.validate(null);
   
   http.createServer(app).listen(port, function () {
     console.log('Express server listening on port ' + port);

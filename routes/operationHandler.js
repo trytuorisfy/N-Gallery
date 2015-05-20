@@ -16,6 +16,7 @@ var util = require('util');
 var fsPlus = require('../lib/fs-plus');
 var path = require('path');
 var log = require('../lib/logger');
+// var conf = require('../lib/config').config;
 var conf = require('../lib/config');
 
 var reImgType = /(\.jpg|\.jpeg|\.gif|\.png)$/i;
